@@ -30,6 +30,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				 <cloudHubDeployment>
 				 <uri>https://anypoint.mulesot.com</uri>
 					<muleversion>${mule.version}</muleversion>
 					<!-- Deploy User Parameter -->
@@ -41,6 +42,7 @@
 					<businessGroup>${business}</businessGroup>
 					<workerType>${workers}</workerType>
 					<objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>
 				<classifier>mule-application</classifier>
                 </configuration>
 			</plugin>
